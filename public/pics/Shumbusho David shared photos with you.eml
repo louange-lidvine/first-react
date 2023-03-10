@@ -1,0 +1,150 @@
+Delivered-To: lidvinelouange@gmail.com
+Received: by 2002:a05:6358:c319:b0:105:5e73:1fe3 with SMTP id fk25csp221896rwb;
+        Tue, 7 Mar 2023 11:41:00 -0800 (PST)
+X-Received: by 2002:a17:902:c407:b0:19e:7490:c93e with SMTP id k7-20020a170902c40700b0019e7490c93emr22525942plk.63.1678218059569;
+        Tue, 07 Mar 2023 11:40:59 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1678218059; cv=none;
+        d=google.com; s=arc-20160816;
+        b=RrlO9PewdsOSr93hNHnc+5v+al1g+WbF4JCWzQxSQTKixbQPePHZQ2XiSUz5D9U9F9
+         jQxZ6A3hAg2GWLkfXOWJ/n30SxHs93fgfPxxz5gmpaKXuQz/pUYux7h2J1kE1xuql+YG
+         tPjIi2TxnVIHDuYOskaMU4lYPj4Zvs8J3yR2N5tWD7VU3YjYhMaaNyoh976cnIiPFCFw
+         Ojzr6ltpOiSiNwo4rhyp1uDvJnGoWLodb64GwUREy5aUVmXrzuMLsM9jYFRvreQ0PunC
+         S2tyysWcyBbqWjV73K9ePoVcGZ4dxbW7lw2g8o0ffCb3LEW/sQx6lSSTTBuonegvKD+3
+         daJA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:from:subject:message-id:list-unsubscribe:date:mime-version
+         :dkim-signature;
+        bh=GbwbjgsPjW9Kn5dw9UwgU+wDfkgvBdwH+odVoQFJeqo=;
+        b=uY/Y7mt+m9L5Jxg/pQgoVRAbsTQyPSjF/exV1lqTWVwxAxBfIK2g7J5OVUjAJqQ+5j
+         +y7/GK9dAJxikoxt33m8h1ExMw3SvRQfFV6ZYQyiIyr+rYMZhMUq9UUp6WwB87bIKcyR
+         tkEyx3SEBQ51Rtihtcln+u6Ue3Jyaw9g+bQvhZKzU3PMchBBaXERqyyQOASlJP17vL6r
+         BM1MXa7gG43FS2N11xPg/lm9Zkl99kOIBFyMzPDRWJQz7/nm4yNoXfyi9B9+oPBmLEnQ
+         WA1Zcxl5hul8wH82CQtRLdLWR8gNFsJCP1VTyy5W3uhfvwDAk0y0FfmuYlsmjAcixRCB
+         dleA==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@google.com header.s=20210112 header.b=a5C22fOA;
+       spf=pass (google.com: domain of 3rjmhzcgkak8cdgtean-uquptrutquqyqppqsvtrpsqqutqusurtvddvat.rdb@photos.bounces.google.com designates 209.85.220.69 as permitted sender) smtp.mailfrom=3RJMHZCgKAK8cdgTean-uQuptrutQuqyQppQSvtrpSqqUtqUSUrtVddVaT.Rdb@photos.bounces.google.com;
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=google.com
+Return-Path: <3RJMHZCgKAK8cdgTean-uQuptrutQuqyQppQSvtrpSqqUtqUSUrtVddVaT.Rdb@photos.bounces.google.com>
+Received: from mail-sor-f69.google.com (mail-sor-f69.google.com. [209.85.220.69])
+        by mx.google.com with SMTPS id e15-20020a170902784f00b0019c97a4c467sor6681978pln.41.2023.03.07.11.40.53
+        for <lidvinelouange@gmail.com>
+        (Google Transport Security);
+        Tue, 07 Mar 2023 11:40:59 -0800 (PST)
+Received-SPF: pass (google.com: domain of 3rjmhzcgkak8cdgtean-uquptrutquqyqppqsvtrpsqqutqusurtvddvat.rdb@photos.bounces.google.com designates 209.85.220.69 as permitted sender) client-ip=209.85.220.69;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@google.com header.s=20210112 header.b=a5C22fOA;
+       spf=pass (google.com: domain of 3rjmhzcgkak8cdgtean-uquptrutquqyqppqsvtrpsqqutqusurtvddvat.rdb@photos.bounces.google.com designates 209.85.220.69 as permitted sender) smtp.mailfrom=3RJMHZCgKAK8cdgTean-uQuptrutQuqyQppQSvtrpSqqUtqUSUrtVddVaT.Rdb@photos.bounces.google.com;
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=google.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=google.com; s=20210112; t=1678218053;
+        h=to:from:subject:message-id:list-unsubscribe:date:mime-version:from
+         :to:cc:subject:date:message-id:reply-to;
+        bh=GbwbjgsPjW9Kn5dw9UwgU+wDfkgvBdwH+odVoQFJeqo=;
+        b=a5C22fOAYMxbHkTDqt3f96Xo089MKWwbFwMTM5LMc7lvWSYK3FjqgkgnUBBACHrOc5
+         Gf4yOM8HK6uLCHEEa9SyZmCycwLZQzjVyxIFjZupld1Qb99j4oT+oKnQ5s4UtuI7R3L+
+         DECj4S7J0ZLjvPgnGFCwPHUYQrHETRXK80eDDIzfRMjTUVPZNKnUqPI7fHhQFeDEvMAT
+         x8ydJXyHfpYNjv2LsA4sJx/eciq+4DZv8dbNYWrGw1GDjOZWrfmZggDNuzGfY1Yveu0t
+         tyGLNkFKbhqw47UrIhH9Cfj+0CulbZIrwSV60isr5UUp5GHleJBVyLJe5E3QzToukTtK
+         bNtQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112; t=1678218053;
+        h=to:from:subject:message-id:list-unsubscribe:date:mime-version
+         :x-gm-message-state:from:to:cc:subject:date:message-id:reply-to;
+        bh=GbwbjgsPjW9Kn5dw9UwgU+wDfkgvBdwH+odVoQFJeqo=;
+        b=WfJVzTh8W78KWa7F8WnMuF4dEFQuREVH/iatfSwAGDdQYaSowyS1XH7QKTiIyUm4eb
+         uvnxSxlFsMzrv9hHZVafMLkJSwhc19gekEyVCqsbBtBEfrkjHz0Kh4Mc6fRgVWxsAT8D
+         OD0H9ehtRSykHz86JYHdNcnxL5VSg8Lh5u3PM8gYgpV1IHaThZQCNHwyyMEq9gmOUZwX
+         shETuwB95Gh+GsQTHhd9jf6kmU7ssqLJqNaIRNabvSAEQCPoDBdyzY+In0B9xODAB0eP
+         bHFjB31Khl0nDClGpyTSfHna97uJlxGTTSgZ7pOjdglxdK6NJVM6++Zq4GMMd3b1Smi1
+         52JQ==
+X-Gm-Message-State: AO0yUKUl2gR8t3k6Ur2ch/Q5VufS/C1RvryXq09zctTaiUNGgMteI35Z
+	ZemKUqt/707OCcOMw6qWbec=
+X-Google-Smtp-Source: AK7set9xewc/T/+cW7hTbz/q02U07soI/2KR37/56GjZHpVL7x4/Gj533yd8n9SuyskVgAXGhfE=
+MIME-Version: 1.0
+X-Received: by 2002:a17:902:edc2:b0:19a:9834:bb2c with SMTP id
+ q2-20020a170902edc200b0019a9834bb2cmr6364819plk.11.1678218052837; Tue, 07 Mar
+ 2023 11:40:52 -0800 (PST)
+Date: Tue, 07 Mar 2023 11:40:52 -0800
+List-Unsubscribe: https://notifications.google.com/emailpreferences/unsubscribe/AIbu_FuYtX-GO3NHQH_pePMfyyofBjqPP2ocI2ZcL3mRtgvEWBdUpV4ZPwUEJCPdjjnqo6X9EFlj5fb2f-zulOUCtXHR0mIa-k7dkoAN0AnBMDHcVREta5CvhTlBd0822h0m0KLaqsvtK4GZGsk0GTmTy_KMpE070bSzUem_D8yzWLTUDzTPdVRstrkVldsXtui-oAM
+X-Notifications: 631a1d3c852e351c
+X-Notifications-Bounce-Info: AWY41VYic5qO0Q31Ua5JMVITJvCXgO-b5NJ7KcP3zmXdxijxWcR25SJUwq9Y3VT8WugN-V0bS7ghBic5MqBS4CNjBWgmw0ZXondfo2gftqrexCOt3J4Ygg2fzPBtmkrPY0n79Kis0dRSvqxZjRGhPPjCOTUNSXL0Mjk20yuwtDQddiLzHiqnfeRolx1yRJINjAwNjA0MDQxNTM1NTk2OTMzMg
+Message-ID: <bd_KDXU4oe4IV5BSuAFmiA@notifications.google.com>
+Subject: Shumbusho David shared photos with you
+From: "Shumbusho David (via Google Photos)" <noreply-5b504254b519b00bd6420d11f41fdf24@google.com>
+To: lidvinelouange@gmail.com
+Content-Type: multipart/alternative; boundary="000000000000e5273105f654968c"
+
+--000000000000e5273105f654968c
+Content-Type: text/plain; charset="UTF-8"; format=flowed; delsp=yes
+Content-Transfer-Encoding: base64
+
+R29vZ2xlIFBob3Rvcw0KDQpTaHVtYnVzaG8gRGF2aWQ6IFV6YXJlYmUgd2VueWluZSBub25laG8g
+dWhpdGVtbyBheW8gdXNoYWthIPCfmILwn5iCDQoNClZpZXcgcGhvdG9zIGhlcmU6ICANCmh0dHBz
+Oi8vYWNjb3VudHMuZ29vZ2xlLmNvbS9BY2NvdW50Q2hvb3Nlcj9FbWFpbD1saWR2aW5lbG91YW5n
+ZUBnbWFpbC5jb20mY29udGludWU9aHR0cHM6Ly9waG90b3MuZ29vZ2xlLmNvbS9kaXJlY3QvQUYx
+UWlwTndFc3pVOGhkYzA1N3phMTY1VGFrT1hSRVZSN05JSEVlRzI5RG9SbUIxdjNPNUxpczN5UVRR
+N0VfV3BHQlRidw0KDQpZb3UgcmVjZWl2ZWQgdGhpcyBtYWlsIGJlY2F1c2UgU2h1bWJ1c2hvIERh
+dmlkIHNoYXJlZCB0aGVzZSBwaG90b3Mgd2l0aCAgDQp5b3UuIElmIHlvdSBubyBsb25nZXIgd2lz
+aCB0byByZWNlaXZlIGVtYWlsIG5vdGlmaWNhdGlvbnMgb2Ygc2hhcmVkIHBob3RvcywgIA0KdW5z
+dWJzY3JpYmUgaGVyZTogIA0KaHR0cHM6Ly9ub3RpZmljYXRpb25zLmdvb2dsZS5jb20vZW1haWxw
+cmVmZXJlbmNlcy91bnN1YnNjcmliZS9BSWJ1X0Z1WXRYLUdPM05IUUhfcGVQTWZ5eW9mQmpxUFAy
+b2NJMlpjTDNtUnRndkVXQmRVcFY0WlB3VUVKQ1BkampucW82WDlFRmxqNWZiMmYtenVsT1VDdFhI
+UjBtSWEtazdka29BTjBBbkJNREhjVlJFdGE1Q3ZoVGxCZDA4MjJoMG0wS0xhcXN2dEs0R1pHc2sw
+R1RtVHlfS01wRTA3MGJTelVlbV9EOHl6V0xUVUR6VFBkVlJzdHJrVmxkc1h0dWktb0FNDQoNCkdl
+dCBHb29nbGUgUGhvdG9zIChodHRwczovL2dvb2dsZS5jb20vcGhvdG9zKQ0KDQpHb29nbGUgTExD
+LCAxNjAwIEFtcGhpdGhlYXRyZSBQa3d5LCBNb3VudGFpbiBWaWV3LCBDQSA5NDA0MyBVU0ENCg0K
+--000000000000e5273105f654968c
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<html><body style=3D"margin: 0; padding: 0; text-align:center;"><table cell=
+spacing=3D"0" cellpadding=3D"0" style=3D"max-width: 460px; margin: 0 auto; =
+table-layout: fixed; text-align: center"><tr><td><table cellspacing=3D"0" c=
+ellpadding=3D"0" style=3D"max-width: 420px; margin: 0 auto; table-layout: f=
+ixed; text-align: center"><tbody><tr><td style=3D"padding: 32px 0;"><img sr=
+c=3D"https://ssl.gstatic.com/social/photosui/images/email/header/logo_photo=
+s_en_color_178x32dp.png" height=3D"32" title=3D"Google Photos Logo" style=
+=3D"vertical-align: middle;"></td></tr><tr><td><table cellspacing=3D"0" cel=
+lpadding=3D"0" style=3D"border: 1px solid #e0e0e0; border-radius: 8px; padd=
+ing:24px;"><tbody><tr style=3D"text-align: center;"><td style=3D"display: i=
+nline-grid; padding-bottom: 16px;"><img src=3D"https://lh3.googleuserconten=
+t.com/a/AGNmyxb8K4-CX5W472nKfKZkIpH64u2IF-cYGlwfPxE4t8Q=3Ds80-cc" height=3D=
+"60" width=3D"60" style=3D"border-radius: 50%;"></td></tr><tr><td style=3D"=
+font-family: arial, sans-serif; text-align: center;"><span style=3D"color: =
+#212121; font-size: 14px; line-height: 20px;"><span style=3D"font-weight: b=
+old;">Shumbusho David</span>: Uzarebe wenyine noneho uhitemo ayo ushaka =F0=
+=9F=98=82=F0=9F=98=82&nbsp;</span></td></tr><tr style=3D"font-family: arial=
+, sans-serif; font-size: 14px; font-weight: bold; text-align: center;"><td =
+style=3D"display: inline-grid; padding-top: 24px;"><a style=3D"color: #fff;=
+ text-decoration: none; background-color: #1a73e8; padding: 11px 16px; bord=
+er-radius: 4px;" href=3D"https://accounts.google.com/AccountChooser?Email=
+=3Dlidvinelouange@gmail.com&amp;continue=3Dhttps://photos.google.com/direct=
+/AF1QipNwEszU8hdc057za165TakOXREVR7NIHEeG29DoRmB1v3O5Lis3yQTQ7E_WpGBTbw">Vi=
+ew photos</a></td></tr></tbody></table></td></tr></tbody></table><div style=
+=3D"color: #757575; font-family: arial, sans-serif; font-size: 12px; line-h=
+eight: 18px; margin-top: 40px;">You received this mail because Shumbusho Da=
+vid shared these photos with you. If you no longer wish to receive email no=
+tifications of shared photos, <a href=3D"https://notifications.google.com/e=
+mailpreferences/unsubscribe/AIbu_FuYtX-GO3NHQH_pePMfyyofBjqPP2ocI2ZcL3mRtgv=
+EWBdUpV4ZPwUEJCPdjjnqo6X9EFlj5fb2f-zulOUCtXHR0mIa-k7dkoAN0AnBMDHcVREta5CvhT=
+lBd0822h0m0KLaqsvtK4GZGsk0GTmTy_KMpE070bSzUem_D8yzWLTUDzTPdVRstrkVldsXtui-o=
+AM" style=3D"color:#757575; text-decoration:underline;">unsubscribe here</a=
+>.</div><div style=3D"color: #757575; font-family: arial, sans-serif; font-=
+size: 14px; line-height: 18px; margin: 24px 0 6px 0;">Get the Google Photos=
+ app</div><table cellspacing=3D"10" cellpadding=3D"0" style=3D"margin: 0 au=
+to; table-layout: fixed; text-align: center;"><tr><td><a href=3D"https://pl=
+ay.google.com/store/apps/details?id=3Dcom.google.android.apps.photos&referr=
+er=3Dutm_source%3Ddsharing%26utm_medium%3Demail"><img src=3D"https://ssl.gs=
+tatic.com/social/photosui/images/email/google_play_badge.png" height=3D"40"=
+ width=3D"135" title=3D"Google Play store" style=3D"vertical-align: middle;=
+"></a></td><td><a href=3D"https://itunes.apple.com/app/apple-store/id962194=
+608?pt=3D9008&ct=3Dds-email&mt=3D8"><img src=3D"https://ssl.gstatic.com/soc=
+ial/photosui/images/email/appstore_badge.png" height=3D"40" width=3D"135" t=
+itle=3D"App store" style=3D"vertical-align: middle;"></a></td></tr></table>=
+<hr style=3D"margin: 14px 0 32px 0; border: none; border-top: 1px solid #e0=
+e0e0;"><div style=3D"color: #757575; font-family: arial, sans-serif; font-s=
+ize: 10px; line-height: 14px; margin-bottom: 32px;">Google LLC<br>1600 Amph=
+itheatre Pkwy<br>Mountain View, CA 94043 USA</div></td></tr></table></body>=
+</html>
+--000000000000e5273105f654968c--
